@@ -1,14 +1,12 @@
-import React, {VFC} from 'react';
-// import { faFolderOpen } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
 
 
-
-const Folders: React.VFC = () => {
+const Folders = () => {
 
   function handleClick(){
     console.log("hoge")
   }
+  console.log('hoge1')
   
   return (  
     <div className="text-center">
@@ -17,7 +15,7 @@ const Folders: React.VFC = () => {
          className="btn btn-primary"
          onClick={() => handleClick()}       
       >
-      openfolder
+        openfolder
       </button>
     </div>
   )
