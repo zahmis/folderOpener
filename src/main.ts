@@ -1,6 +1,5 @@
 import os from 'os';
 import path from 'path';
-import * as isDev from 'electron-is-dev';
 
 import { app, BrowserWindow, session } from 'electron';
 
