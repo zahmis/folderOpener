@@ -1,15 +1,24 @@
 import React, {VFC} from 'react';
-import { Folder } from 'react-bootstrap-icons';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faFolder } from '@fortawesome/free-solid-svg-icons'
-
+// import { faFolderOpen } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 
 const Folders: React.VFC = () => {
+
+  function handleClick(){
+    console.log("hoge")
+  }
+  
   return (  
     <div className="text-center">
-      <Folder/>
+      <button
+         type="button"
+         className="btn btn-primary"
+         onClick={() => handleClick()}       
+      >
+      openfolder
+      </button>
     </div>
   )
 }

@@ -10,5 +10,4 @@ import App from './App'
 // new Notification(NOTIFICATION_TITLE, { body: NOTIFICATION_BODY })
 //   .onclick = () => console.log(CLICK_MESSAGE)
 
-
 ReactDOM.render(<App />, document.getElementById('root'));
