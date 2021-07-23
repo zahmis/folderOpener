@@ -6,19 +6,24 @@ const Folders = () => {
 
   function clickHandler(target:number){
     setTarget(target)
-    console.log(target)
   }
+
+  let src = `../src/assets/images/cupmen-${target}.png`
 
   return (  
     <>
-    <div className="d-flex flex-column w-25">
-      <button onClick={()=>clickHandler(1)}><img src="../src/assets/images/cupmen-1.png" /></button>
-      <button onClick={()=>clickHandler(2)}><img src="../src/assets/images/cupmen-2.png" /></button>
-      <button onClick={()=>clickHandler(3)}><img src="../src/assets/images/cupmen-3.png" /></button>
-      <button onClick={()=>clickHandler(4)}><img src="../src/assets/images/cupmen-4.png" /></button>
-    </div>
-    <div>
-      <img src="../src/assets/images/cupmen-1.png"/>
+    <div className="container">
+      <div className="row">
+        <div className="d-flex flex-column col-6">
+          <span onClick={()=>clickHandler(1)}><img src="../src/assets/images/cupmen-1.png" />picture-angle-1</span>
+          <span onClick={()=>clickHandler(2)}><img src="../src/assets/images/cupmen-2.png" />picture-angle-2</span>
+          <span onClick={()=>clickHandler(3)}><img src="../src/assets/images/cupmen-3.png" />picture-angle-3</span>
+          <span onClick={()=>clickHandler(4)}><img src="../src/assets/images/cupmen-4.png" />picture-angle-4</span>
+       </div>
+       <div className="col-6">
+         <img src={src} />picture-angle-{target}
+      </div>
+     </div>
     </div>
     </>
   )
