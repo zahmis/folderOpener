@@ -10,7 +10,6 @@ const Folders = () => {
   return (  
     <div className="text-center">
       {/* <button className="btn btn-primary" onClick={() => handleClick()}>openfolder</button> */}
-      file
     </div>
   )
 }
