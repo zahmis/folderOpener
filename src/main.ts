@@ -26,14 +26,14 @@ const createWindow = () => {
 
 app.whenReady().then(async () => {
 
-  // if (process.env.NODE_ENV === 'development') {
-  //   await session.defaultSession
-  //     .loadExtension(path.join(os.homedir(), extPath), {
-  //       allowFileAccess: true,
-  //     })
-  //     .then(() => console.log('React Devtools loaded...'))
-  //     .catch((err) => console.log(err));
-  // }
+  if (process.env.NODE_ENV === 'development') {
+    await session.defaultSession
+      .loadExtension(path.join(os.homedir(), extPath), {
+        allowFileAccess: true,
+      })
+      .then(() => console.log('React Devtools loaded...'))
+      .catch((err) => console.log(err));
+  }
 
   createWindow();
 });
