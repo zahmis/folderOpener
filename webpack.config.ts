@@ -34,13 +34,20 @@ const base: Configuration = {
       {
         test: /\.s[ac]ss$/,
         use: [
-          "css-loader", 
-          "sass-loader",
-          MiniCssExtractPlugin.loader,
-          // {
-          //   loader: 'sass-loader',
-          //   options: { sourceMap: isDev },
-          // },
+          { loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'css-loader',
+            options: { sourceMap: isDev },
+          },
+          {
+            loader: 'sass-loader',
+            options: { sourceMap: isDev },
+          },
+          {
+            loader: 'style-loader',
+            options: { sourceMap: isDev },
+          },
         ],
       },
       {
