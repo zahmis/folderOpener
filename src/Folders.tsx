@@ -11,12 +11,16 @@ const Folders = () => {
   return (  
     <div className="text-center">
       <button
-         type="button"
-         className="btn btn-primary"
+
+
+className="btn btn-primary"
          onClick={() => handleClick()}       
       >
         openfolder
       </button>
+      <form action="clic">
+        hoge
+      </form>
     </div>
   )
 }
