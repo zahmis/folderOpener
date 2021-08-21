@@ -7,7 +7,18 @@
     "start": "run-s clean build serve",
     "clean": "rimraf dist",
     "build": "cross-env NODE_ENV=\"development\" webpack --progress",
+    "electron:build": "yarn build && electron-builder",
     "serve": "electron ."
+  },
+  "build": {
+    "extends": null,
+    "files":[
+      "dist/**/*"
+    ],
+    "appId": "com.electron.imageOpner",
+    "mac": {
+      "target": "dmg"
+    }
   },
   "author": "",
   "license": "ISC",
