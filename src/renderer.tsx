@@ -18,7 +18,7 @@ const App: React.VFC = () => {
           </div>
           <Switch>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/folder" component={NudleImages}/>
+            <Route exact path="/nudleimages" component={NudleImages}/>
           </Switch>     
         </div>
       </HashRouter>    
