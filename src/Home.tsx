@@ -2,8 +2,10 @@ import React from 'react';
 
 
 const Home = () => {
-  return (  
-    <h1 className="text-center">folder opener app</h1>
+  return ( 
+    <>
+    <p className="text-center">select folders</p>
+    </>
   )
 }
 
