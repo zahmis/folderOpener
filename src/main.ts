@@ -1,6 +1,5 @@
 import os from 'os';
 import path from 'path';
-
 import { app, BrowserWindow, session } from 'electron';
 
 const extPath =
