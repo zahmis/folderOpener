@@ -17,9 +17,9 @@ const createWindow = () => {
     },
   });
 
-  if (process.env.NODE_ENV === 'development') {
-    mainWindow.webContents.openDevTools({ mode: 'detach' });
-  }
+  // if (process.env.NODE_ENV === 'development') {
+  //   mainWindow.webContents.openDevTools({ mode: 'detach' });
+  // }
 
   mainWindow.loadFile('dist/index.html');
 };
