@@ -14,7 +14,7 @@ const App: React.VFC = () => {
         <div className="App">
           <div className="menu text-center">
             <Link to="/"><button className="btn btn-primary m-3">Home</button></Link>
-            <Link to="/folder"><button className="btn btn-primary m-3">NudleImages</button></Link>
+            <Link to="/nudleimages"><button className="btn btn-primary m-3">NudleImages</button></Link>
           </div>
           <Switch>
             <Route exact path="/" component={Home}/>
