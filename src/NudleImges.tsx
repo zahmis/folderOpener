@@ -16,19 +16,19 @@ const Folders = () => {
         <div className="row">
           <div className="d-flex flex-column col-4">
             <div onClick={()=>clickHandler(1)}>
-              <div>picture-angle-1</div>
+              <div>picture-angle-1 {target === 1 && <i className="fa fa-check"></i>}</div>
               <img className="w-75" src="../src/assets/images/cupmen-1.png" />
             </div>
             <div onClick={()=>clickHandler(2)}>
-              <div>picture-angle-2</div>
+              <div>picture-angle-2 {target === 2 && <i className="fa fa-check"></i>}</div>
               <img className="w-75"  src="../src/assets/images/cupmen-2.png" />
             </div>
             <div onClick={()=>clickHandler(3)}>
-              <div>picture-angle-3</div>
+              <div>picture-angle-3 {target === 3 && <i className="fa fa-check"></i>}</div>
               <img className="w-75" src="../src/assets/images/cupmen-3.png" />
             </div>
             <div onClick={()=>clickHandler(4)}>
-              <div>picture-angle-4</div>
+              <div>picture-angle-4 {target === 4 && <i className="fa fa-check"></i>}</div>
               <img className="w-75" src="../src/assets/images/cupmen-4.png" />
             </div>
         </div>
