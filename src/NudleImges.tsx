@@ -4,7 +4,7 @@ const Folders = () => {
 
   const [target, setTarget] = useState(1)
 
-  const clickHandler = (target:number) => {
+  const clickHandler = (target:number):void => {
     setTarget(target)
   }
 
