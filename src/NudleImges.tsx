@@ -14,7 +14,7 @@ const Folders = () => {
     <>
       <div className="container">
         <div className="row">
-          <div className="d-flex flex-column col-4">
+          <div className="col-4 d-flex flex-column ">
             <div onClick={()=>clickHandler(1)}>
               <div>picture-angle-1 {target === 1 && <i className="fa fa-check"></i>}</div>
               <img className="w-75" src="../src/assets/images/cupmen-1.png" />
