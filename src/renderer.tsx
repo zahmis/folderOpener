@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { HashRouter, Link, Route, Switch } from "react-router-dom";
 
 import Home from './Home'
-import Folders from './Folders'
+import NudleImages from './NudleImges'
 
 
 const App: React.VFC = () => {
@@ -14,11 +14,11 @@ const App: React.VFC = () => {
         <div className="App">
           <div className="menu text-center">
             <Link to="/"><button className="btn btn-primary m-3">Home</button></Link>
-            <Link to="/folder"><button className="btn btn-primary m-3">Folders</button></Link>
+            <Link to="/folder"><button className="btn btn-primary m-3">NudleImages</button></Link>
           </div>
           <Switch>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/folder" component={Folders}/>
+            <Route exact path="/folder" component={NudleImages}/>
           </Switch>     
         </div>
       </HashRouter>    
